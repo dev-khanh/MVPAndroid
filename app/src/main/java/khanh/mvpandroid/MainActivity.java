@@ -3,6 +3,7 @@ package khanh.mvpandroid;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
+import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.ListView;
 
@@ -40,6 +41,6 @@ public class MainActivity extends AppCompatActivity implements MainView {
 
     @Override
     public void displayMain(List<Demo> listDemo) {
-
+        listView.setAdapter(new ArrayAdapter<Demo>(this,android.R.layout.simple_list_item_1,listDemo));
     }
 }
