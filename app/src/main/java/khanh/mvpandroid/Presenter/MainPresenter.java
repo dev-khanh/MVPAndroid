@@ -12,9 +12,9 @@ public class MainPresenter implements LoadDemoListener {
     private UserInterator mainInterator;
     private MainView mainView;
 
-    public MainPresenter(UserInterator mainInterator, MainView mainView) {
-        this.mainInterator = mainInterator;
+    public MainPresenter(MainView mainView) {
         this.mainView = mainView;
+        mainInterator = new UserInterator(this);
     }
 
     public void loadData(){
