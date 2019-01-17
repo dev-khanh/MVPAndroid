@@ -18,6 +18,6 @@ public class UserInterator {
             Demo demo = new Demo("I'm DevK");
             listDemo.add(demo);
         }
-        listener.onLoandDemoSuccec(listDemo);
+        listener.onLoadDemoSuccess(listDemo);
     }
 }

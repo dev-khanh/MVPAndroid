@@ -21,13 +21,14 @@ public class MainPresenter implements LoadDemoListener {
         mainInterator.createListData();
     }
 
+
     @Override
-    public void onLoandDemoSuccec(List<Demo> listDemo) {
+    public void onLoadDemoSuccess(List<Demo> listDemo) {
         mainView.displayMain(listDemo);
     }
 
     @Override
-    public void onLoandDemoFailure(String message) {
+    public void onLoadDemoFailure(String message) {
 
     }
 }
